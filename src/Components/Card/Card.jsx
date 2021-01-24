@@ -13,6 +13,7 @@ export class Card extends React.Component{
         super(props);
 
         this.changeValue = this.changeValue.bind(this)
+        // this.controlValue=this.controlValue.bind(this)
     }
 
     componentDidMount() {
@@ -23,12 +24,11 @@ export class Card extends React.Component{
     changeValue(name) {
 
         return event => {
-            console.log(event.target.value)
+        // Validation - Enter just number
+            event.target.value = event.target.value.replace(/[^\d]/g, '');
             // Если количество символов больше 4,то переносим фокус на след. инпут
-            event.target.value= event.target.value.replace(/[^0-9]/g,"")
-            // evt.value = evt.value.replace(/[^0-9]/g,"")
+
             if (event.target.value.length > 3 ) {
-                console.log(name)
                 switch (name) {
                     case 'inputRef1':
                         this.inputRef2.current.focus();
@@ -69,26 +69,28 @@ export class Card extends React.Component{
                     <input ref={this.inputRef1}
                            name='inputRef1'
                            onChange={this.changeValue('inputRef1')}
-                           type="number"
-                           />
+                           type="text"
+                           onKeyDown={this.controlValue}
+
+                    />
 
                     <input ref={this.inputRef2}
                            name='inputRef2'
                            onChange={this.changeValue('inputRef2')}
-                           type="number"
-                           />
+                           type="text"
+                    />
 
                     <input ref={this.inputRef3}
                            name='inputRef3'
                            onChange={this.changeValue('inputRef3')}
-                           type="number"
-                           />
+                           type="text"
+                    />
 
                     <input ref={this.inputRef4}
                            name='inputRef4'
                            onChange={this.changeValue('inputRef4')}
-                           type="number"
-                           />
+                           type="text"
+                    />
                 </div>
             </div>
         );
