@@ -31,11 +31,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../webStorm/hille_hw_react_2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hillel_hw_4" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -49,7 +52,10 @@
       <updated>1611174092197</updated>
       <workItem from="1611174094358" duration="3029000" />
       <workItem from="1611181011933" duration="11614000" />
-      <workItem from="1611336118777" duration="30274000" />
+      <workItem from="1611336118777" duration="31193000" />
+      <workItem from="1611501930896" duration="2553000" />
+      <workItem from="1611688367793" duration="153000" />
+      <workItem from="1612802177375" duration="10195000" />
     </task>
     <servers />
   </component>
@@ -67,17 +73,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/Components/Card/Card.jsx</url>
-          <line>69</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
